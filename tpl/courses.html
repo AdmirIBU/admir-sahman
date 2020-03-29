@@ -1,0 +1,31 @@
+<div>
+    dasdasdaasda
+    <table id="courses-table" class="display" style="width: 100%;"></table>
+</div>
+
+<script type="text/javascript">
+    var dataSet=[
+        ["React developer course","IT","4.45","Joe Wilson","14 000","24.99$"],
+        ["Maths 101","Mathematics","4.25","Will Jordan","5 000","22.99$"],
+        ["Physics - explained","Physics","3.95","Conan Smith","12 246","14.99$"],
+        ["English language - Begginer course","Language","4.61","Adriana Wood","19 000","28.99$"],
+        ["German language - Begginer course","Language","3.78","Eric Cartman","9 252","13.99$"],
+        ["English language - Intermediate","Language","4.21","Adriana Wood","22 547","34.99$"],
+        ["German language - Intermediate course","Language","3.91","Eric Cartman","10 241","19.99$"],
+    ];
+
+    $("#courses-table").DataTable({
+        data: dataSet,
+        columns: [
+            {title:"Course title"},
+            {title:"Department"},
+            {title:"Rating"},
+            {title:"Teacher name"},
+            {title:"Views"},
+            {title:"Price"},
+
+        ]
+    })
+
+
+</script>
